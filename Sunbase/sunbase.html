@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sunbase.css">
+    <title>Sortable Form Designer</title>
+</head>
+
+<body>
+    <div id="form-nav">
+        <span>Form Designer</span>
+        <button onClick="saveForm()">Save</button>
+    </div>
+    <div class="form-outer">
+        <div class="form-inputs">
+            <div class="component-head"><span>Components</span></div>
+            <button class="input-buttons" onclick="addElement('input')">Add Input</button>
+            <button class="input-buttons" onclick=" addElement('select')">Add Select</button>
+            <button class="input-buttons" onclick=" addElement('textarea')">Add Textarea</button>
+        </div>
+        <div id="form-container" class="sortable-list">
+            <h1>FORM</h1>
+            <div id="form-elements"></div>
+        </div>
+    </div>
+
+    <script src="sunbase.js"></script>
+</body>
+
+</html>
